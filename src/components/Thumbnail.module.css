@@ -1,0 +1,66 @@
+.thumbnail {
+  cursor: pointer;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 3px solid transparent;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #2d1b4e;
+  width: 110px;
+  position: relative;
+}
+
+.thumbnail:hover {
+  transform: scale(1.06);
+  box-shadow: 0 4px 20px rgba(192, 132, 252, 0.4);
+  border-color: #a855f7;
+}
+
+.selected {
+  border-color: #f0abfc !important;
+  box-shadow: 0 0 22px #f0abfc, 0 4px 20px #0007 !important;
+  transform: scale(1.1) !important;
+}
+
+.img {
+  width: 100%;
+  height: 85px;
+  object-fit: cover;
+  display: block;
+}
+
+.selectedOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  background: rgba(240, 171, 252, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkmark {
+  font-size: 1.6rem;
+  color: #f0abfc;
+  text-shadow: 0 0 10px #f0abfc;
+  font-weight: 900;
+}
+
+.caption {
+  padding: 5px 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #a78bca;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #1e0f38;
+}
+
+.captionSelected {
+  color: #f0abfc;
+}
